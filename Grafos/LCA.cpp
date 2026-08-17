@@ -37,6 +37,30 @@ int lca(int u, int v){
 
 	return bl[0][u];
 }
+
+// K steps
+int n;
+const int LOG = 31;
+const int MAXN = 2e5 + 5;
+
+int up[LOG][MAXN];
+void bin_lift() {
+    for(int i = 1; i < LOG; i++) {
+        for(int j = 0; j < n; j++) {
+            up[i][j] = up[i-1][up[i-1][j]];
+        }
+    }
+}
+
+int kSteps(int v, int k) {
+    for(int i = 0; i < LOG; i++) {
+        if(k & (1LL << i)) {
+            v = up[i][v];
+        }
+    }
+    return v;
+}
+
 /*LATEX_DESC_BEGIN***************************
 	**LCA** - Lowest Common Ancestor - **Binary Lifting** - O(Log N) - Build O(N Log N)
 Encontrar o menor ancestral comum entre dois vértices em uma árvore enraizada
