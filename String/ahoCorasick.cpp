@@ -13,11 +13,11 @@ struct Node {
 	Node(Node* p, char c) : p(p), c(c) { nxt.fill(NULL); }
 };
 typedef Node* trie;
-struct Aho {
+struct Corasick {
 	trie root;
 	int nwords = 0;
 	vector<trie> nodes;
-	Aho(){ root = new_Node(NULL, 0); }
+	Corasick(){ root = new_Node(NULL, 0); }
 
 	void add(string &s){
 		trie t = root;
