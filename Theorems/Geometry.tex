@@ -38,4 +38,39 @@
 \end{itemize}
 \end{small}
 
+\subsection{Point in Polygon e Truques Geométricos}
+
+\begin{small}
+\begin{itemize}
+    \item \textbf{Ray Casting (Curva de Jordan):} Resolve ponto em polígono geral em $O(N)$. Traça-se um raio do ponto $P$ até o infinito. Se cruzar as arestas um número ímpar de vezes, $P$ está dentro.
+    \textbf{Truque dos Coprimos:} Para evitar \textit{edge cases} (raio bater num vértice ou aresta colinear), use um vetor de direção com primos altos:
+    \[
+    P_{\infty} = (P.x + 10^9+7, P.y + 10^9+9)
+    \]
+    Isso inclina a reta o suficiente para garantir que ela nunca acerte uma coordenada inteira exata, reduzindo o problema a uma simples checagem de interseção de segmentos.
+
+    \item \textbf{Winding Number (Soma dos Ângulos):} Alternativa em $O(N)$ baseada na soma dos ângulos entre $P$ e vértices adjacentes:
+    \[
+    \sum \text{Ângulos} = \begin{cases} \pm 2\pi, & \text{dentro} \\ 0, & \text{fora} \end{cases}
+    \]
+    \textbf{Dica:} Implemente as checagens usando apenas \textbf{Produto Vetorial} (verificando semiplanos) para manter a aritmética inteira e fugir da imprecisão do \texttt{atan2}.
+
+    \item \textbf{Prefix Sum de Áreas (Shoelace):} Usado para responder \textit{queries} de área de sub-polígonos (cortes) em $O(1)$. Mantém-se o prefixo do produto vetorial:
+    \[
+    S[k] = S[k-1] + (V_{k-1} \times V_k)
+    \]
+    A área da fatia conectando $V_i$ a $V_j$ é:
+    \[
+    \text{Area}_{i,j} = \frac{1}{2} \Big| S[j] - S[i] + (V_j \times V_i) \Big|
+    \]
+
+    \item \textbf{Busca Binária em Polígono Convexo:} Resolve ponto em polígono estritamente convexo em $O(\log N)$.
+    \begin{itemize}
+        \item Fixe o vértice $V_0$.
+        \item Use busca binária baseada no \texttt{ccw} (Cross Product) para achar o triângulo angular $(V_0, V_k, V_{k+1})$ que contém $P$.
+        \item Verifique se $P$ está no semiplano interno da aresta $V_k \to V_{k+1}$.
+    \end{itemize}
+\end{itemize}
+\end{small}
+
 % credits: https://github.com/gabrielpessoa1/ICPC-Library/
