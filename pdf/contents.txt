@@ -1,0 +1,125 @@
+$
+# First line is the divisor character used to separate the file name from it's title!!!
+# Don't change the first line!!!
+
+# Any line followed by a '#' character is ignored
+# Section headings must be in square brackets
+# Subsections within a section should follow the format:
+# (filename within code directory)(divisor character:$)(subsection title)
+# div character:$
+
+# If you add an '@' at the end of a file title, that file will not be hashed, even if use_hash is true.
+
+[DP]
+../Code/DP/Digit DP.cpp  $ Digit DP
+../Code/DP/LCS.cpp       $ LCS
+../Code/DP/LIS.cpp       $ LIS
+../Code/DP/SOS DP.cpp    $ SOS DP
+../Code/DP/TSP.cpp       $ TSP
+
+[Data Structures]
+../Code/Data Structures/BIT.cpp                   $ BIT
+../Code/Data Structures/BIT2D.cpp                 $ BIT2D
+../Code/Data Structures/BIT2DSparse.cpp           $ BIT2DSparse
+../Code/Data Structures/MinQueue.cpp              $ MinQueue
+../Code/Data Structures/PrefixSum2D.cpp           $ PrefixSum2D
+../Code/Data Structures/SegTree.cpp               $ SegTree
+../Code/Data Structures/SegTreeIterativa.cpp      $ SegTreeIterativa
+../Code/Data Structures/SegTreeLazy.cpp           $ SegTreeLazy
+../Code/Data Structures/SegTreeLazyIterativa.cpp  $ SegTreeLazyIterativa
+../Code/Data Structures/SegTreePersistente.cpp    $ SegTreePersistente
+../Code/Data Structures/SegTreePersistente2x.cpp  $ SegTreePersistente2x
+../Code/Data Structures/SegTreeSparse.cpp         $ SegTreeSparse
+../Code/Data Structures/SegTreeSparseLazy.cpp     $ SegTreeSparseLazy
+../Code/Data Structures/SparseTable.cpp           $ SparseTable
+../Code/Data Structures/SqrtDecomposition.cpp     $ SqrtDecomposition
+../Code/Data Structures/orderedSet.cpp            $ orderedSet
+../Code/Data Structures/sack.cpp                  $ sack
+
+[Geometry]
+../Code/Geometry/3D.cpp             $ 3D
+../Code/Geometry/Circles.cpp        $ Circles
+../Code/Geometry/ConvexHull.cpp     $ ConvexHull
+../Code/Geometry/KDTree.cpp         $ KDTree
+../Code/Geometry/Line.cpp           $ Line
+../Code/Geometry/LineContainer.cpp  $ LineContainer
+../Code/Geometry/Minkowski.cpp      $ Minkowski
+../Code/Geometry/Point.cpp          $ Point
+../Code/Geometry/Polygons.cpp       $ Polygons
+../Code/Geometry/Segment.cpp        $ Segment
+../Code/Geometry/quadtree.cpp       $ quadtree
+
+[Grafos]
+../Code/Grafos/2SAT.cpp                   $ 2SAT
+../Code/Grafos/Bellman-Ford.cpp           $ Bellman-Ford
+../Code/Grafos/BlockCutTree.cpp           $ BlockCutTree
+../Code/Grafos/CentroidDecomposition.cpp  $ CentroidDecomposition
+../Code/Grafos/CentroidMinPath.cpp        $ CentroidMinPath
+../Code/Grafos/DSU Persistente.cpp        $ DSU Persistente
+../Code/Grafos/DSU Rollback.cpp           $ DSU Rollback
+../Code/Grafos/DSU.cpp                    $ DSU
+../Code/Grafos/Dijkstra.cpp               $ Dijkstra
+../Code/Grafos/Dinic.cpp                  $ Dinic
+../Code/Grafos/DominatorTree.cpp          $ DominatorTree
+../Code/Grafos/Euler Path.cpp             $ Euler Path
+../Code/Grafos/Euler Tour.cpp             $ Euler Tour
+../Code/Grafos/Floyd-Warshall.cpp         $ Floyd-Warshall
+../Code/Grafos/HLD.cpp                    $ HLD
+../Code/Grafos/Kahn's.cpp                 $ Kahn's
+../Code/Grafos/Kruskal.cpp                $ Kruskal
+../Code/Grafos/LCA.cpp                    $ LCA
+../Code/Grafos/MinCostMaxFlow.cpp         $ MinCostMaxFlow
+../Code/Grafos/SCC - Kosaraju.cpp         $ SCC - Kosaraju
+../Code/Grafos/Tarjan.cpp                 $ Tarjan
+../Code/Grafos/bridges-cutpoints.cpp      $ bridges-cutpoints
+../Code/Grafos/gridBFS.cpp                $ gridBFS
+
+[Math]
+../Code/Math/CRT.cpp              $ CRT
+../Code/Math/Catalan.cpp          $ Catalan
+../Code/Math/Combinatorics.cpp    $ Combinatorics
+../Code/Math/FFT.cpp              $ FFT
+../Code/Math/FFT2in1.cpp          $ FFT2in1
+../Code/Math/FFTmod.cpp           $ FFTmod
+../Code/Math/FWHT.cpp             $ FWHT
+../Code/Math/GaussElimin.cpp      $ GaussElimin
+../Code/Math/Matrix.cpp           $ Matrix
+../Code/Math/NTT.cpp              $ NTT
+../Code/Math/Sieve.cpp            $ Sieve
+../Code/Math/StirlingNumbers.cpp  $ StirlingNumbers
+../Code/Math/fexp.cpp             $ fexp
+../Code/Math/frac.cpp             $ frac
+../Code/Math/getprimes.cpp        $ getprimes
+../Code/Math/mint.cpp             $ mint
+../Code/Math/random.cpp           $ random
+../Code/Math/utils.cpp            $ utils
+
+[Others]
+../Code/Others/BuscaBinariaParalela.cpp  $ BuscaBinariaParalela
+../Code/Others/BuscaTernaria.cpp         $ BuscaTernaria
+../Code/Others/Date.cpp                  $ Date
+../Code/Others/Dice.cpp                  $ Dice
+../Code/Others/Hungarian.cpp             $ Hungarian
+../Code/Others/MO.cpp                    $ MO
+../Code/Others/MOTree.cpp                $ MOTree
+../Code/Others/stressTest.sh             $ stressTest
+
+[String]
+../Code/String/KMP.cpp          $ KMP
+../Code/String/Manacher.cpp     $ Manacher
+../Code/String/SuffixArray.cpp  $ SuffixArray
+../Code/String/Z-Function.cpp   $ Z-Function
+../Code/String/ahoCorasick.cpp  $ ahoCorasick
+../Code/String/hash.cpp         $ hash
+../Code/String/hash2.cpp        $ hash2
+../Code/String/hash2A.cpp       $ hash2A
+../Code/String/trie.cpp         $ trie
+
+[Theorems]
+../Code/Theorems/Combinatorics.tex  $ Combinatorics
+../Code/Theorems/DP.tex             $ DP
+../Code/Theorems/Games.tex          $ Games
+../Code/Theorems/Geometry.tex       $ Geometry
+../Code/Theorems/Graph.tex          $ Graph
+../Code/Theorems/Math.tex           $ Math
+../Code/Theorems/NumberTheory.tex   $ NumberTheory

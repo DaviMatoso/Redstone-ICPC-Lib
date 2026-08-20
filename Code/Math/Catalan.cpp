@@ -27,7 +27,7 @@ correctly matched, e.g. for n = 3, we have: ()()(), ()(()), (())(), ((())), and 
 4. Cat(n) counts the number of ways a convex polygon (see Section 7.3) of n + 2 sides
 can be triangulated. See Figure 5.1, left.
 
-5. Cat(n) counts the number of monotonic paths along the edges of an n × n grid, which
+5. Cat(n) counts the number of monotonic paths along the edges of an n x n grid, which
 do not pass above the diagonal. A monotonic path is one which starts in the lower
 left corner, finishes in the upper right corner, and consists entirely of edges pointing
 rightwards or upwards. See Figure 5.1, right and also see Section 4.7.1.
