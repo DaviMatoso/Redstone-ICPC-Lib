@@ -3,7 +3,7 @@
 #define t_section tuple<string, string, bool>
 using namespace std;
 
-const bool USE_HASH = true;
+const bool USE_HASH = false;
 const int HASH_LEN = 3;
 
 const vector<string> IGNORED_LINES = {

@@ -66,18 +66,42 @@
     % \end{align*}
     % \vspace{-2pt}
 
-    \begin{alignat*}{3}
-        &\binom{n}{k} = \binom{n}{n - k} = \frac{n}{k} \binom{n - 1}{k - 1}, \\
-        &\sum_{i=0}^{k} \binom{m}{i} \binom{n}{k-i} = \binom{m+n}{k},
-        &\sum_{i=0}^{m} \binom{n}{i} (-1)^i = \binom{n - 1}{m}  (-1)^m       \\
-        &\sum_{i=0}^{n} \binom{n}{i} = 2^n                         , \quad      
-        &\sum_{i=0}^{n} \binom{n}{i} i = n \cdot 2^{n - 1}         , \qquad\qquad\quad
-        &\sum_{i=0}^{n} \binom{i}{k} = \binom{n+1}{k+1}            ,           \\
-        &\sum_{i=0}^{n} \binom{n-i}{i} = F_{n+1}                   ,
-        &\sum_{i=0}^{m} \binom{n + i}{i} = \binom{n + m + 1}{m}    ,   \quad
-        &\sum_{i=0}^{n} \binom{n}{i}^2 = \binom{2n}{n}                        \\
+    \begin{alignat*}{2}
+        &\binom{n}{k}
+         = \binom{n}{n-k}
+         = \frac{n}{k}\binom{n-1}{k-1}
+        &&
+        \sum_{i=0}^{k}
+        \binom{m}{i}\binom{n}{k-i}
+         = \binom{m+n}{k}
+        \\[2pt]
+        &\sum_{i=0}^{m}
+        \binom{n}{i}(-1)^i
+         = \binom{n-1}{m}(-1)^m
+        &&
+        \sum_{i=0}^{n}\binom{n}{i}
+         = 2^n
+        \\[2pt]
+        &\sum_{i=0}^{n}
+        \binom{n}{i}i
+         = n2^{n-1}
+        &&
+        \sum_{i=0}^{n}\binom{i}{k}
+         = \binom{n+1}{k+1}
+        \\[2pt]
+        &\sum_{i=0}^{n}
+        \binom{n-i}{i}
+         = F_{n+1}
+        &&
+        \sum_{i=0}^{m}
+        \binom{n+i}{i}
+         = \binom{n+m+1}{m}
+        \\[2pt]
+        &\sum_{i=0}^{n}
+        \binom{n}{i}^{2}
+         = \binom{2n}{n}
+        &&
     \end{alignat*}
-
 
     \item\textbf{Triângulo de Pascal} \\[0.5ex]
     \begin{center} 
@@ -160,12 +184,17 @@ $[0,12]$: 1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570, 4213597.
 
 O Eulerian number $\left\langle{n\atop k}\right\rangle$ ou $A(n,k)$ conta o número de permutações de tamanho $n$ com exatamente $k$ \emph{ascents} ($p_i<p_{i+1}$).
 
-\[ 
-\left\langle{n\atop k}\right\rangle 
-\ = \ \ 
-(k+1) \left\langle{n-1\atop k}\right\rangle  +  (n-k)\left\langle{n-1\atop k-1}\right\rangle 
-\ \ \ =\ \ 
-\sum_{i=0}^{k} (-1)^i \binom{n+1}{i}\,(k+1-i)^n
+\[
+\begin{aligned}
+\left\langle {n \atop k} \right\rangle
+&=
+(k+1)\left\langle {n-1 \atop k} \right\rangle
++
+(n-k)\left\langle {n-1 \atop k-1} \right\rangle \\[2pt]
+&=
+\sum_{i=0}^{k}
+(-1)^i \binom{n+1}{i}(k+1-i)^n
+\end{aligned}
 \]
 
 \[

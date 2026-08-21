@@ -117,9 +117,9 @@ $
 
 [Theorems]
 ../Code/Theorems/Combinatorics.tex  $ Combinatorics
-../Code/Theorems/DP.tex             $ DP
 ../Code/Theorems/Games.tex          $ Games
 ../Code/Theorems/Geometry.tex       $ Geometry
 ../Code/Theorems/Graph.tex          $ Graph
 ../Code/Theorems/Math.tex           $ Math
 ../Code/Theorems/NumberTheory.tex   $ NumberTheory
+../Code/Theorems/DP.tex             $ DP

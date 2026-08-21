@@ -4,17 +4,39 @@
 \begin{itemize}
     \item \textbf{Sums:}
     \begin{center}
-    \begin{tabular}{l l}
-        $\sum_{k=0}^n k = n(n+1)/2$ & ${n \choose k} = \frac{n!}{(n-k)!k!}$ \\
-        $\sum_{k=a}^b k = (a+b)(b-a+1)/2$ & ${n \choose k} = {n-1 \choose k} + {n-1 \choose k-1}$ \\
-        $\sum_{k=0}^n k^2 = n(n+1)(2n+1)/6$ & ${n+1 \choose k} = \frac{n+1}{n-k+1} {n \choose k}$ \\
-        $\sum_{k=0}^n k^3 = n^2(n+1)^2/4$ & ${n \choose k+1} = \frac{n-k}{k+1} {n \choose k}$ \\
-        $\sum_{k=0}^n k^4 = (6n^5 + 15n^4 + 10n^3 - n)/30$ & ${n \choose k} = \frac{n}{n-k} {n-1 \choose k}$ \\
-        $\sum_{k=0}^n k^5 = (2n^6 + 6n^5 + 5n^4 - n^2)/12$ & ${n \choose k} = \frac{n-k+1}{k} {n \choose k-1}$ \\
-        $\sum_{k=0}^n x^k = (x^{n+1} - 1)/(x - 1)$ & $12! \approx 2^{28.8}$ \\
-        $\sum_{k=0}^n kx^k = (x - (n+1)x^{n+1} + nx^{n+2})/(x-1)^2$ & $20! \approx 2^{61.1}$ \\
-        $1 + x + x^2 + \dots = 1 / (1 - x)$ & \\
-    \end{tabular}
+    \[
+    \begin{array}{@{}l@{\qquad}l@{}}
+        \sum_{k=0}^n k = \frac{n(n+1)}{2}
+            & {n \choose k} = \frac{n!}{(n-k)!k!} \\[2pt]
+
+        \sum_{k=a}^b k = \frac{(a+b)(b-a+1)}{2}
+            & {n \choose k} = {n-1 \choose k} + {n-1 \choose k-1} \\[2pt]
+
+        \sum_{k=0}^n k^2 = \frac{n(n+1)(2n+1)}{6}
+            & {n+1 \choose k} = \frac{n+1}{n-k+1}{n \choose k} \\[2pt]
+
+        \sum_{k=0}^n k^3 = \frac{n^2(n+1)^2}{4}
+            & {n \choose k+1} = \frac{n-k}{k+1}{n \choose k} \\[2pt]
+
+        \sum_{k=0}^n k^4 =
+            \frac{6n^5+15n^4+10n^3-n}{30}
+            & {n \choose k} = \frac{n}{n-k}{n-1 \choose k} \\[2pt]
+
+        \sum_{k=0}^n k^5 =
+            \frac{2n^6+6n^5+5n^4-n^2}{12}
+            & {n \choose k} = \frac{n-k+1}{k}{n \choose k-1} \\[2pt]
+
+        \sum_{k=0}^n x^k = \frac{x^{n+1}-1}{x-1}
+            & 12! \approx 2^{28.8} \\[2pt]
+
+        \sum_{k=0}^n kx^k =
+            \frac{x-(n+1)x^{n+1}+nx^{n+2}}{(x-1)^2}
+            & 20! \approx 2^{61.1} \\[2pt]
+
+        1+x+x^2+\dots = \frac{1}{1-x}
+            &
+    \end{array}
+    \]
     \end{center}
     \begin{itemize}
         \item \textbf{Hockey-stick identity:} $\sum_{i=r}^{n}\binom{i}{r} = \binom{n+1}{r+1}$
