@@ -55,6 +55,19 @@ int hshComp(StringHash& a, int la, int ra, StringHash& b, int lb, int rb){
 	return a.s[la+diff] < b.s[lb+diff] ? -1 : +1;
 }
 
+ll merge_hashes(ll hash_A, ll hash_B, int len_B) {
+    ll h1_A = (hash_A >> 32) & 0xFFFFFFFF;
+    ll h2_A = hash_A & 0xFFFFFFFF;
+
+    ll h1_B = (hash_B >> 32) & 0xFFFFFFFF;
+    ll h2_B = hash_B & 0xFFFFFFFF;
+
+    ll h1_C = (h1_A * expb1[len_B] + h1_B) % MOD1;
+    ll h2_C = (h2_A * expb2[len_B] + h2_B) % MOD2;
+
+    return (h1_C << 32) | h2_C;
+}
+
 /*LATEX_DESC_BEGIN***************************
 **String Hash** - Double Hash
 precalc()    -> O(N)
