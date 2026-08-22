@@ -35,6 +35,7 @@ $
 ../Code/Data Structures/SqrtDecomposition.cpp     $ SqrtDecomposition
 ../Code/Data Structures/orderedSet.cpp            $ orderedSet
 ../Code/Data Structures/sack.cpp                  $ sack
+../Code/Data Structures/treap.cpp                 $ Treap
 
 [Geometry]
 ../Code/Geometry/3D.cpp             $ 3D
